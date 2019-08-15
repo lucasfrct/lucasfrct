@@ -1,0 +1,13 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "8c385f2c8a69c425182351019d7e19b0";
+  src: url("./fonts/materializefont.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/materializefont.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/materializefont.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/materializefont.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/materializefont.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/materializefont.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/materializefont.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

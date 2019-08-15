@@ -1,0 +1,50 @@
+Sites modelo:
+
+https://www.webhostingsecretrevealed.net/pt/blog/web-design/20-best-personal-websites-in-2013/
+
+http://www.narrowdesign.com/
+
+Page: Home (nome e hobies)
+
+Headline: Lucas Costa
+
+copy: Aviso: essa será uma apressentacao nao convencional com interfaces experimentais, caso sinta desconforto utilize a versão intuiva
+	
+CTA: Meu perfil
+
+Page: my perfil
+
+Headline: Um sonhador
+ 
+copy: 
+	section 1: Amante do conhecimento, atencioso e dedicado.
+	section 2: 31 anos, Casado e com espirito aventureiro
+	section 3: amante da inovacao e entusiasta da tecnologia
+	section 4: nasci para ser um tecnico, Nasci para ser professor
+	section 5: gosta de conversar com pessoas e adoro debates
+	section 6: tenho foco, objetivos e dedicacao
+
+CTA: contato
+
+
+Page: my skills (minhas habilidades)
+
+Headline: logo Lucas
+
+copy: 
+	section 1: Esse  e o trabalho que gosto de fazer
+	section 2: Esse postifolio e um vislumbre da maneira como evolui no meu trabalho.
+	section 3: Faca algo aceitavel, crie algo inesperado e surpreenda par que pessoas sintam algo
+CTA: lista de projetos
+
+Page: context (filosofia pessoal)
+
+copy:
+
+CTA:  
+
+Page: my dreams (sonho de vida)
+
+copy:
+
+CTA: 
