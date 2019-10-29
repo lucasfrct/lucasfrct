@@ -20,7 +20,7 @@ Headline: Um sonhador
  
 copy: 
 	section 1: Amante do conhecimento, atencioso e dedicado.
-	section 2: 31 anos, Casado e com espirito aventureiro
+	section 2: 31 anos e Casado
 	section 3: amante da inovacao e entusiasta da tecnologia
 	section 4: nasci para ser um tecnico, Nasci para ser professor
 	section 5: gosta de conversar com pessoas e adoro debates
