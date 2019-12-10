@@ -5,11 +5,14 @@ https://www.webhostingsecretrevealed.net/pt/blog/web-design/20-best-personal-web
 http://www.narrowdesign.com/
 
 ###############################################################################################
+Name Module: lc
+
+###############################################################################################
 Page: Home (nome e hobies)
 
 Headline: Lucas Costa
 
-copy: Aviso: essa será uma apressentacao nao convencional com interfaces experimentais, caso sinta desconforto utilize a versão intuiva
+copy: Aviso: essa serï¿½ uma apressentacao nao convencional com interfaces experimentais, caso sinta desconforto utilize a versï¿½o intuiva
 	
 CTA: Meu perfil
 

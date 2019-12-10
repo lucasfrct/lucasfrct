@@ -1,0 +1,39 @@
+{
+  "name": "lucasfrct",
+  "version": "1.0.0",
+  "description": "Lucas Costa - Site de Apresentação pessoal",
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-sass": "^4.13.0",
+    "nodemon": "^2.0.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-image": "^5.1.0",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-strip-comments": "^2.5.2",
+    "gulp-uglify": "^3.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasfrct/lucasfrct.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasfrct/lucasfrct/issues"
+  },
+  "homepage": "https://github.com/lucasfrct/lucasfrct#readme",
+  "keywords": []
+}
