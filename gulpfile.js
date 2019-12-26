@@ -20,16 +20,16 @@ gulp.task("imgMinify", ImgCompiler);
 gulp.task('init', function() {
     gulp.watch("project/vendor/scss/**/*.scss", gulp.series('sasscompiler'));
     gulp.watch("project/vendor/js/**/*.js", gulp.series('jscompiler'));
+    gulp.watch("project/vendor/images/**/*", gulp.series('imgMinify'));
 });
 
 function SassCompiler( ){
     return gulp
         .src("project/vendor/scss/**/*.scss")
-        .pipe(stipComments())                           // retira comentários
         .pipe(sass())                                   // converte sass para css
         .pipe(minify())                                 // minifica
         .pipe(rename({ suffix: ".min" }))               // renomeia
-        .pipe(minifyCSS())                                  // minifica
+        .pipe(minifyCSS())                              // minifica
         .pipe(gulp.dest("public/vendor/css"))
 }
 
