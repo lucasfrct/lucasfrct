@@ -1,3 +1,8 @@
+/*
+ * gulpfile.js
+ * Autor: Lucas Costa
+ * Janeiro de 2020
+ */
 "use strict"
  
 const gulp          = require("gulp");
@@ -19,7 +24,7 @@ gulp.task("imgMinify", ImgCompiler);
 
 gulp.task("app", AppCompiler);
 
-gulp.task('init', function() {
+gulp.task('start', function() {
     gulp.watch("project/vendor/scss/**/*.scss", gulp.series('sasscompiler'));
     gulp.watch("project/vendor/js/**/*.js", gulp.series('jscompiler'));
     gulp.watch("project/vendor/images/**/*", gulp.series('imgMinify'));
