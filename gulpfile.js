@@ -23,12 +23,14 @@ gulp.task("jscompiler", JsCompiler);
 gulp.task("imgMinify", ImgCompiler);
 
 gulp.task("app", AppCompiler);
+gulp.task("index", IndexCompiler);
 
 gulp.task('start', function() {
     gulp.watch("project/vendor/scss/**/*.scss", gulp.series('sasscompiler'));
     gulp.watch("project/vendor/js/**/*.js", gulp.series('jscompiler'));
     gulp.watch("project/vendor/images/**/*", gulp.series('imgMinify'));
     gulp.watch("project/app/**/*", gulp.series('app'));
+    gulp.watch("project/**", gulp.series('index'));
 });
 
 function SassCompiler( ){
@@ -65,4 +67,10 @@ function AppCompiler() {
     return gulp
         .src("project/app/**/*")
         .pipe(gulp.dest("public/app"))
+}
+
+function IndexCompiler() {
+    return gulp
+        .src("project/**")
+        .pipe(gulp.dest("public/"))
 }

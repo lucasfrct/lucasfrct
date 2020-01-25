@@ -10,10 +10,10 @@ const $Cors     = require ( 'cors' );                                       // D
 const $app = {                                                              // Init app
     server: null,                                                           // Server node
     port: 80,                                                               // Porta web
-    up: ( ) => {                                                            // Subir o servidor
+    up: ( path = "/" ) => {                                                            // Subir o servidor
         $app.server = $Express ( );                                         // Iniciar API express
         $app.server.use ( $Cors ( ) );                                      // Usar acesso a origem
-        $app.server.use ( $Express.static ( $app.path (  "/public"  ) ) );        // Usar o caminho "/" como padrao
+        $app.server.use ( $Express.static ( $app.path ( path ) ) );         // Usar o caminho "/" como padrao
         $app.server.listen ( process.env.PORT || $app.port );               // Ouvir a porta 
     },
     get: ( $uri = "/", $callback ) => {                                     // Obter requisicao
@@ -29,5 +29,5 @@ const $app = {                                                              // I
     },
 };
 
-$app.up ( );                                                                // subir o servidor
+$app.up ( "/public" );                                                      // subir o servidor
 //$app.resolve ( "/sign", "sign.html" );                                    // resolver uri
