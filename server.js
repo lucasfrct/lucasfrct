@@ -3,31 +3,31 @@
 * Autor: Lucas Costa
 * data: Novembro de 2019
 */
-const $Express  = require ( 'express' );                                    // Depedencia Express
-const $Path     = require ( 'path' );                                       // Dependencia Path
-const $Cors     = require ( 'cors' );                                       // Dependencia CORS
+const Express  = require ( 'express' )                                      // Depedencia Express
+const Path     = require ( 'path' )                                         // Dependencia Path
+const Cors     = require ( 'cors' )                                         // Dependencia CORS
 
-const $app = {                                                              // Init app
+const app = {                                                               // Init app
     server: null,                                                           // Server node
     port: 80,                                                               // Porta web
-    up: ( path = "/" ) => {                                                            // Subir o servidor
-        $app.server = $Express ( );                                         // Iniciar API express
-        $app.server.use ( $Cors ( ) );                                      // Usar acesso a origem
-        $app.server.use ( $Express.static ( $app.path ( path ) ) );         // Usar o caminho "/" como padrao
-        $app.server.listen ( process.env.PORT || $app.port );               // Ouvir a porta 
+    up: ( path = "/" ) => {                                                 // Subir o servidor
+        app.server = Express ( )                                            // Iniciar API express
+        app.server.use ( Cors ( ) )                                         // Usar acesso a origem
+        app.server.use ( Express.static ( app.path ( path ) ) )             // Usar o caminho "/" como padrao
+        app.server.listen ( process.env.PORT || app.port )                  // Ouvir a porta 
     },
-    get: ( $uri = "/", $callback ) => {                                     // Obter requisicao
-        $app.server.get ( $uri, $callback );                                // Obter requisicao
+    get: ( uri = "/", callback ) => {                                       // Obter requisicao
+        app.server.get ( uri, callback )                                    // Obter requisicao
     },
-    resolve: ( $uri = "/", $file = "index.html" ) => {                      // Resolver a URI
-        $app.get ( $uri,  ( $req, $res ) => {                               // Obter uma requisicao
-            $res.sendFile ( $app.path ( $file ) );                          // Carregar o arquivo de resposta
-        } ); 
+    resolve: ( uri = "/", file = "index.html" ) => {                        // Resolver a URI
+        app.get ( uri,  ( req, res ) => {                                   // Obter uma requisicao
+            res.sendFile ( app.path ( file ) )                              // Carregar o arquivo de resposta
+        } )  
     },
-    path: ( $file = "/" ) => {                                              // transforma em path
-        return $Path.join ( __dirname + "/" + $file );                      // retirnart um caminho válido
+    path: ( file = "/" ) => {                                               // transforma em path
+        return Path.join ( __dirname + "/" + file )                         // retirnart um caminho válido
     },
-};
+}
 
-$app.up ( "/public" );                                                      // subir o servidor
-//$app.resolve ( "/sign", "sign.html" );                                    // resolver uri
+app.up ( "/" )                                                              // subir o servidor
+//app.resolve ( "/sign", "sign.html" );                                     // resolver uri
